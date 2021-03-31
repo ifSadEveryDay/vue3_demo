@@ -1,11 +1,3 @@
-<!--
- * @Author: luoawai
- * @Date: 2021-03-29 21:42:40
- * @LastEditTime: 2021-03-31 00:06:47
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vue3_demo\src\components\Button\index.vue
--->
 <template>
   <div>
     <button
@@ -61,14 +53,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .L-button {
   display: inline-block;
   line-height: 1;
@@ -79,22 +63,6 @@ export default defineComponent({
   box-sizing: border-box;
   outline: none;
   padding: 10px;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: radial-gradient(circle, #fff 10%, transparent 11%);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    transform: scale(12, 12);
-    opacity: 0;
-    transition: transform 0.6s, opacity 0.6s;
-  }
   > span {
     display: inline-block;
     vertical-align: middle;
@@ -165,7 +133,7 @@ export default defineComponent({
     &:focus {
       > span {
         color: #8e8282;
-        border-color: #222831;
+        // border-color: #222831;
         background-color: #f7e4a4;
       }
     }

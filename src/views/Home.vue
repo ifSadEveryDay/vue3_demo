@@ -8,8 +8,6 @@
 -->
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
     <index type="primary" plain round @click="nodeClick" debounce></index>
   </div>
 </template>
